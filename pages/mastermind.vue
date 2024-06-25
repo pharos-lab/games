@@ -1,8 +1,8 @@
 <template>
     <main class="flex justify-center">
         
-        <section class="board mt-12 bg-slate-200">
-            <div class="mastermind-grid divide-slate-300 divide-y">
+        <section class="board mt-12 ">
+            <div class="mastermind-grid bg-slate-200 divide-slate-300 divide-y">
                 <div class="row flex divide-x divide-slate-300" v-for="n in 10">
                     <div class="combination flex gap-4 p-2">
                         <div class="size-7 rounded-full border bg-white" v-for="n in 4"></div>
@@ -13,8 +13,17 @@
                 </div>
             </div>
             
-            <div class="mastermind-choice">
-                
+            <div class="mastermind-choice flex gap-4 mt-8">
+                <button class="bg-red-500 rounded size-7"></button>
+                <button class="bg-orange-500 rounded size-7"></button>
+                <button class="bg-green-500 rounded size-7"></button>
+                <button class="bg-blue-500 rounded size-7"></button>
+                <button class="bg-yellow-500 rounded size-7"></button>
+                <button class="bg-purple-500 rounded size-7"></button>
+            </div>
+            <div class="flex gap-4 justify-center mt-4">
+                <button class="px-3 py-2 rounded bg-slate-100">undo</button>
+                <button class="px-3 py-2 rounded bg-slate-100">go</button>
             </div>
         </section>
     </main>
